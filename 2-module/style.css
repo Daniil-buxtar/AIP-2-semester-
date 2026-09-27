@@ -1,0 +1,175 @@
+.inherit1 p { color: blue; }
+.inherit2 p { color: blue; }
+.inherit2 b { color: red; }
+.inherit3 b { color: red; }
+.inherit3 p { color: blue; }
+.inherit4 ul { color: blue; }
+.inherit5 ul { color: blue; }
+.inherit5 li { color: red; }
+.inherit6 ul { color: blue; }
+.inherit6 li { color: red; }
+.inherit6 i { color: green; }
+.inherit7 i { font-size: 30px; }
+.inherit7 ul { font-size: 20px; }
+.inherit7 li { color: red; font-weight: bold; }
+
+.odd { color: red; }
+.eve { color: green; }
+.eee { color: red; }
+
+.block .header { font-family: Arial; }
+.block h2.header { font-size: 30px; color: red; }
+.block h3.header { font-size: 20px; color: green; }
+
+#elem h2 { color: red; }
+#elem .text { color: red; }
+#elem p.text { color: red; }
+#elem li.text { color: red; }
+
+h2.zzz { color: red; }
+h2 .zzz { color: red; }
+.bbb.zzz { color: red; }
+.bbb .zzz { color: red; }
+.bbb.zzz.xxx { color: red; }
+.bbb .zzz.xxx { color: red; }
+.bbb.zzz .xxx { color: red; }
+.bbb .zzz .xxx { color: red; }
+#elem.bbb { color: red; }
+#elem .bbb { color: red; }
+
+div p { color: red; }
+div h2 { color: red; }
+#block p { color: red; }
+#block h2 { color: red; }
+.bbb { color: red; }
+#block .bbb { color: red; }
+p.bbb { color: red; }
+h2.bbb { color: red; }
+#block p.bbb { color: red; }
+.bbb, .xxx { color: red; }
+p.bbb, h2.xxx { color: red; }
+#block p.bbb, #block p.xxx { color: red; }
+.fff { color: red; }
+.fff p { color: red; }
+p.fff { color: red; }
+.fff .bbb { color: red; }
+.fff h2.bbb { color: red; }
+
+h1, h2, h3 { text-align: center; }
+h1, h2, h3 { color: red; }
+p { text-align: justify; font-size: 16px; }
+h2 { color: blue; }
+h3 { font-size: 16px; }
+
+ul i { color: red; }
+p i { color: green; }
+p b i { color: red; }
+
+li > b { color: red; }
+
+.xxx { font-size: 30px; }
+
+.block1 { color: red; }
+.block2 { color: green; }
+.block3 { color: cyan; }
+.red { color: red; }
+.green { color: green; }
+
+.eee1 { font-size: 20px; }
+.zzz1 { font-size: 30px; }
+.eee1, .zzz1 { line-height: 1.5; font-family: Arial; }
+.eee2 { font-size: 20px; }
+.zzz2 { font-size: 30px; }
+.ggg2 { font-size: 35px; }
+.eee2, .zzz2, .ggg2 { text-align: center; font-family: Arial; }
+
+h2.header { font-size: 40px; }
+h3.header { font-size: 30px; }
+.header { color: red; }
+
+.eee3 i { color: red; }
+
+p.bbb2 { color: red; }
+p .bbb3 { color: red; }
+.eee4 p.bbb4 { color: red; }
+.eee5 p .bbb5 { color: red; }
+
+.success { color: green; }
+.error { color: red; }
+.large { font-size: 30px; }
+.small { font-size: 20px; }
+
+#elem1 { color: red; }
+#elem2 { color: green; }
+#elem3 { color: cyan; }
+
+#block10 { color: red; font-family: Arial; }
+.text10 { font-size: 30px; }
+
+.eee.zzz.ccc { color: red; }
+
+.bbb.zzz { color: red; }
+h2.bbb.zzz { color: red; }
+#elem.bbb { color: red; }
+#elem.bbb.zzz { color: red; }
+h2#elem.bbb { color: red; }
+
+#block h1, #block h2 { text-align: center; }
+#block h1, #block h2, #block h3 { text-align: center; }
+#block h2 { color: blue; }
+#block h3 { font-size: 16px; color: red; }
+#block h1.eee, #block h2.zzz { text-align: center; }
+#block h1.eee { font-size: 30px; }
+#block h2.zzz { font-size: 20px; }
+.xxx .kkk, .eee h2.zzz, #eee h2 { text-align: center; }
+.eee h2.zzz, .xxx { text-align: center; }
+
+h2.priority { font-size: 30px; }
+h2.priority2 { font-size: 20px; color: blue; font-style: italic; }
+
+#elem + li { color: red; }
+.elem + li { color: red; }
+
+#elem ~ li { color: red; }
+
+main * p { color: red; }
+
+[title] { color: red; }
+p[title] { color: red; }
+p[title="hello"] { color: red; }
+a[href^="http://"] { color: red; }
+a[href$=".html"] { color: red; }
+p[title*="hello"] { color: red; }
+[class^="top-"] { color: red; }
+
+a.link1:hover { color: red; text-decoration: none; }
+a.link1:link { color: blue; }
+a.link1:visited { color: green; }
+a.link1:active { color: black; }
+
+a.link2 { color: blue; text-decoration: none; }
+a.link2:hover { color: red; text-decoration: underline; }
+
+a.zzz { color: red; }
+a.zzz:hover { text-decoration: none; }
+#test a { color: red; }
+#test a:hover { text-decoration: none; }
+#block a.zzz { color: red; }
+#block a.zzz:hover { text-decoration: none; }
+.block a.zzz { color: red; }
+.block a.zzz:hover { text-decoration: none; }
+
+ul.ps li:nth-child(3) { color: red; }
+ul.ps li:nth-child(odd) { background: #eee; }
+ul.ps li:nth-child(even) { background: #ccc; }
+ul.ps li:nth-child(3n) { color: green; }
+ul.ps li:nth-last-child(2) { color: blue; }
+ul.oc li:only-child { color: red; }
+.empty:empty { background: yellow; height: 20px; }
+ul.pt li:first-of-type { color: red; }
+ul.pt li:last-of-type { color: green; }
+ul.pt li:nth-of-type(2) { color: blue; }
+ul.pt li:nth-last-of-type(2) { color: orange; }
+ul.nt li:not(.elem) { color: red; }
+ul.nt2 li:not(:first-child) { color: red; }
+ul.nt3 li:not(:first-child):not(:last-child) { color: red; }

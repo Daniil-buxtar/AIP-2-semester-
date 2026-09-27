@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>CSS Селекторы — практика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Наследование CSS свойств</h1>
+
+<div class="inherit1">
+    <p>This is some <b>text</b> in paragraph. №1 — b синий</p>
+</div>
+<div class="inherit2">
+    <p>This is some <b>text</b> in paragraph. №2 — b красный</p>
+</div>
+<div class="inherit3">
+    <p>This is some <b>text</b> in paragraph. №3 — b красный</p>
+</div>
+<div class="inherit4">
+    <ul>
+        <li>text №4 — li синий</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>
+<div class="inherit5">
+    <ul>
+        <li>text №5 — li красный</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>
+<div class="inherit6">
+    <ul>
+        <li>text <i>italic №6 — зелёный</i> text</li>
+        <li>text <i>italic</i> text</li>
+        <li>text <i>italic</i> text</li>
+    </ul>
+</div>
+<div class="inherit7">
+    <ul>
+        <li>text <i>italic №7 — 30px</i> text</li>
+        <li>text <i>italic</i> text</li>
+        <li>text <i>italic</i> text</li>
+    </ul>
+</div>
+
+<h1>Классы элементов</h1>
+
+<ul>
+    <li class="odd">text №1 — красный</li>
+    <li class="eve">text — зелёный</li>
+    <li class="odd">text — красный</li>
+    <li class="eve">text — зелёный</li>
+    <li class="odd">text — красный</li>
+    <li class="eve">text — зелёный</li>
+</ul>
+
+<h2 class="eee">Title №2 — красный</h2>
+<p class="eee">paragraph</p>
+<p class="eee">paragraph</p>
+<p>paragraph без класса</p>
+<ul class="eee">
+    <li>text — красный (наследуется)</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<h1>Сложные комбинации селектора потомков и классов</h1>
+
+<div class="block">
+    <h2 class="header">Title h2</h2>
+    <p>text</p>
+    <h3 class="header">Title h3</h3>
+    <p>text</p>
+    <p>text</p>
+</div>
+
+<h1>Селекторы — что выбирают</h1>
+
+<p>№1: <code>.eee .bbb</code> — выбирает элементы с классом bbb внутри класса eee</p>
+<div class="eee">
+    <div class="bbb">+++ (пример .eee .bbb)</div>
+</div>
+
+<p>№2: <code>.eee h2</code> — h2 внутри .eee</p>
+<div class="eee">
+    <h2>+++ (пример .eee h2)</h2>
+</div>
+
+<p>№3: <code>.eee h2.bbb</code> — h2 с классом bbb внутри .eee</p>
+<div class="eee">
+    <h2 class="bbb">+++ (пример .eee h2.bbb)</h2>
+</div>
+
+<p>№4: <code>.eee h3.bbb</code> — h3 с классом bbb внутри .eee</p>
+<div class="eee">
+    <h3 class="bbb">+++ (пример .eee h3.bbb)</h3>
+</div>
+
+<p>№5: <code>.eee p.bbb</code> — p с классом bbb внутри .eee</p>
+<div class="eee">
+    <p class="bbb">+++ (пример .eee p.bbb)</p>
+</div>
+
+<p>№6: <code>.eee .bbb .kkk</code> — .kkk внутри .bbb внутри .eee</p>
+<div class="eee">
+    <div class="bbb">
+        <div class="kkk">+++ (пример .eee .bbb .kkk)</div>
+    </div>
+</div>
+
+<h1>Использование id</h1>
+
+<div id="elem">
+    <h2>Choose №1 — красный</h2>
+    <p>---</p>
+    <h2>Choose</h2>
+    <p>---</p>
+    <p class="text">+++ №2, №3 — красный</p>
+    <p class="text">+++</p>
+    <ul>
+        <li class="text">+++ №4 — красный</li>
+        <li class="text">+++</li>
+        <li class="text">+++</li>
+        <li>---</li>
+        <li>---</li>
+    </ul>
+</div>
+<h2>Do not +++</h2>
+<p>---</p>
+<p class="text">--- (вне #elem)</p>
+
+<h1>Ошибка нескольких селекторов</h1>
+
+<h2 class="zzz">h2.zzz — красный</h2>
+<h2><span class="zzz">h2 .zzz — красный (span внутри h2)</span></h2>
+<p class="bbb zzz">.bbb.zzz — красный (два класса сразу)</p>
+<div class="bbb"><p class="zzz">.bbb .zzz — красный (внутри)</p></div>
+<p class="bbb zzz xxx">.bbb.zzz.xxx — красный (три класса)</p>
+<div class="bbb"><p class="zzz xxx">.bbb .zzz.xxx — красный</p></div>
+<p class="bbb zzz"><span class="xxx">.bbb.zzz .xxx — красный</span></p>
+<div class="bbb"><p class="zzz"><span class="xxx">.bbb .zzz .xxx — красный</span></p></div>
+<p id="elem" class="bbb">#elem.bbb — красный</p>
+<div id="elem"><p class="bbb">#elem .bbb — красный</p></div>
+
+<h1>Практика на комбинации селекторов</h1>
+
+<div>
+    <p>+++ №1 (div p)</p>
+    <h2>+++ №2 (div h2)</h2>
+</div>
+<p>---</p>
+<h2>---</h2>
+
+<div id="block">
+    <h2>+++ №4 (#block h2)</h2>
+    <p>+++ №3 (#block p)</p>
+    <h2 class="bbb">+++ №6 (#block .bbb)</h2>
+    <p class="bbb">+++ №7, №9 (p.bbb / #block p.bbb)</p>
+    <p class="xxx">+++ №12 (#block p.xxx)</p>
+</div>
+<div class="bbb">+++ №5 (.bbb)</div>
+<h2 class="bbb">+++ №8 (h2.bbb)</h2>
+<p class="bbb">+++ №5, №7</p>
+<p class="xxx">+++ №10 (.xxx)</p>
+<h2 class="xxx">+++ №10, №11 (h2.xxx)</h2>
+
+<div class="fff">
+    <h2 class="bbb">+++ №16, №17 (.fff .bbb / .fff h2.bbb)</h2>
+    <p>+++ №14 (.fff p)</p>
+    <p class="bbb">+++ №16</p>
+</div>
+<p class="fff">+++ №15 (p.fff)</p>
+<h2 class="fff">+++ №13 (.fff)</h2>
+
+<h1>Родственные связи тегов</h1>
+
+<ul>
+    <li>text <a href="">link</a></li>
+    <li>text <a href="">link</a></li>
+    <li>text <a href="">link</a></li>
+    <li>text <a href=""><b>bold link</b></a></li>
+</ul>
+
+<p>№3: у абзаца потомки — i, b, a, i(внутри a). Непосредственные — i, a.</p>
+<p>№4: у тега b родители — i, a, p. Непосредственный — i.</p>
+
+<h1>Группировка селекторов</h1>
+<h1>Заголовок h1</h1>
+<h2>Заголовок h2</h2>
+<h3>Заголовок h3</h3>
+
+<h1>Селектор потомков</h1>
+
+<ul>
+    <li>text <i>italic — красный (ul i)</i></li>
+    <li>text <i>italic</i></li>
+</ul>
+<p>paragraph text <i>italic — зелёный (p i)</i></p>
+<p>paragraph text <b><i>bold italic — красный (p b i)</i></b></p>
+
+<h1>Дочерний селектор</h1>
+
+<ul>
+    <li>
+        <i>italic</i>
+        <b>bold — красный (li > b)</b>
+        <b><i>bold italic — красный</i></b>
+    </li>
+</ul>
+
+<h1>span</h1>
+
+<p>Lorem ipsum <span class="xxx">dolor sit</span> amet.</p>
+<p><span class="xxx">Lorem ipsum</span> dolor sit amet.</p>
+
+<h1>div для группировки</h1>
+
+<div class="block1">
+    <h2>Title</h2>
+    <p>text — красный</p>
+    <p>text</p>
+</div>
+<div class="block2">
+    <h2>Title</h2>
+    <p>text — зелёный</p>
+    <p>text</p>
+</div>
+<div class="block3">
+    <h2>Title</h2>
+    <p>text — голубой</p>
+    <p>text</p>
+</div>
+
+<div class="red">
+    <h2>Title</h2>
+    <p>text — красный</p>
+</div>
+<div class="green">
+    <h2>Title</h2>
+    <p>text — зелёный</p>
+</div>
+<div class="red">
+    <h2>Title</h2>
+    <p>text — красный</p>
+</div>
+<div class="green">
+    <h2>Title</h2>
+    <p>text — зелёный</p>
+</div>
+
+<h1>Тег с классом</h1>
+<h2 class="header">h2 с header — 40px, красный</h2>
+<h3 class="header">h3 с header — 30px, красный</h3>
+
+<h1>Селектор потомков и классы</h1>
+<p class="eee3">text <i>italic — красный</i></p>
+<div class="eee3">text <i>italic — красный</i></div>
+
+<h1>Элемент с несколькими классами</h1>
+<p class="success large">Абзац 1 — зелёный, большой</p>
+<p class="error small">Абзац 2 — красный, маленький</p>
+<p class="error large">Абзац 3 — красный, большой</p>
+<p class="success small">Абзац 4 — зелёный, маленький</p>
+
+<h1>id</h1>
+<div id="elem1"><h2>Title</h2><p>text — красный</p><p>text</p></div>
+<div id="elem2"><h2>Title</h2><p>text — зелёный</p><p>text</p></div>
+<div id="elem3"><h2>Title</h2><p>text — голубой</p><p>text</p></div>
+
+<h1>id и класс</h1>
+<div id="block10" class="text10"><p>text — красный, Arial, 30px</p><p>text</p></div>
+<div class="text10"><p>text — только 30px</p><p>text</p></div>
+
+<h1>Несколько классов слитно</h1>
+<p class="eee">Только eee</p>
+<p class="zzz">Только zzz</p>
+<p class="ccc">Только ccc</p>
+<p class="eee zzz ccc">eee+zzz+ccc — красный</p>
+
+<h1>Сложные селекторы</h1>
+<p class="bbb zzz">bbb+zzz — красный</p>
+<h2 class="bbb zzz">h2.bbb.zzz — красный</h2>
+<p id="elem" class="bbb">#elem.bbb</p>
+<p id="elem" class="bbb zzz">#elem.bbb.zzz</p>
+<h2 id="elem" class="bbb">h2#elem.bbb</h2>
+
+<h1>Приоритет</h1>
+<h2 class="priority">h2 — 30px</h2>
+<h2 class="priority2">h2 — 20px, синий, курсив</h2>
+
+<h1>Соседний селектор</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li id="elem">5</li>
+    <li>6 — красный (#elem + li)</li>
+    <li>7</li>
+</ul>
+
+<ul>
+    <li>1</li>
+    <li class="elem">2</li>
+    <li>3 — красный</li>
+    <li>4</li>
+    <li class="elem">5</li>
+    <li>6 — красный</li>
+    <li>7</li>
+</ul>
+
+<h1>Родственный селектор</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li id="elem">5</li>
+    <li>6 — красный (#elem ~ li)</li>
+    <li>7 — красный</li>
+    <li>8 — красный</li>
+    <li>9 — красный</li>
+</ul>
+
+<h1>Универсальный селектор</h1>
+<main>
+    <p>---</p>
+    <div><p>+++ (main * p)</p><p>+++</p></div>
+    <section><p>+++</p><p>+++</p></section>
+</main>
+
+<h1>Селекторы атрибутов</h1>
+<p title="hello">p с title="hello"</p>
+<p title="hello world">p с title содержит hello</p>
+<a href="http://example.com">http:// ссылка</a>
+<a href="page.html">.html ссылка</a>
+
+<h1>Состояния ссылок</h1>
+<a href="#" class="link1">Ссылка 1</a>
+<a href="#" class="link2">Ссылка 2</a>
+
+<h1>Ссылки с классами</h1>
+<a href="#" class="zzz">ссылка с классом zzz</a>
+<div id="test"><a href="#">#test a</a></div>
+<div id="block"><a href="#" class="zzz">#block a.zzz</a></div>
+<div class="block"><a href="#" class="zzz">.block a.zzz</a></div>
+
+<h1>Псевдоклассы позиции</h1>
+<ul class="ps">
+    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+</ul>
+<ul class="oc">
+    <li>единственный потомок — красный</li>
+</ul>
+<div class="empty"></div>
+<ul class="pt">
+    <li>1 — красный (first-of-type)</li>
+    <li>2 — синий</li>
+    <li>3 — оранжевый</li>
+    <li>4 — зелёный (last-of-type)</li>
+</ul>
+
+<h1>Селектор отрицания</h1>
+<ul class="nt">
+    <li>1 — красный</li>
+    <li class="elem">2 — не красный</li>
+    <li>3 — красный</li>
+</ul>
+<ul class="nt2">
+    <li>1 — не красный</li>
+    <li>2 — красный</li>
+    <li>3 — красный</li>
+</ul>
+<ul class="nt3">
+    <li>1 — не красный</li>
+    <li>2 — красный</li>
+    <li>3 — красный</li>
+    <li>4 — красный</li>
+    <li>5 — не красный</li>
+</ul>
+
+</body>
+</html>
