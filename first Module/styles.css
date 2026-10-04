@@ -1,0 +1,122 @@
+h1 {
+    width: 500px;
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+
+h2 {
+    width: 500px;
+    text-align: center;
+    color: green;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h3 {
+    color: red;
+}
+
+ul {
+    width: 400px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+ol {
+    color: #5DE100;
+}
+
+p {
+    width: 500px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: Arial;
+    text-indent: 40px;
+}
+
+th {
+    font-weight: normal;
+	text-align: left;
+}
+
+table {
+	width: 400px;
+}
+
+td {
+    width: 500px;
+    height: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+	text-align: center;
+}
+h2 {
+	color: blue;
+}
+h3 {
+	font-size: 16px;
+	color: red;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	color: red;
+}
+h3 {
+	font-size: 16px;
+}
+
+ul i {
+	color: red;
+}
+p i {
+	color: green;
+}
+
+
+p b i {
+	color: red;
+}
+
+li > b {
+	color: red;
+}
+
+.odd {
+	color: red;
+}
+.eve {
+	color: green;
+}
+
+.eee {
+	color: red;
+}
+
+.xxx {
+	font-size: 30px;
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
