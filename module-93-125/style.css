@@ -1,1 +1,212 @@
+.bg-pink {
+    width: 300px;
+    height: 100px;
+    color: white;
+    background-color: pink;
+}
 
+.bg-green {
+    width: 300px;
+    height: 100px;
+    color: white;
+    background-color: green;
+}
+
+.border-solid {
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.border-blue {
+    width: 300px;
+    height: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.border-dotted {
+    width: 300px;
+    height: 100px;
+    border: 1px dotted black;
+}
+
+.border-dashed {
+    width: 300px;
+    height: 100px;
+    border: 1px dashed black;
+}
+
+.border-ridge {
+    width: 300px;
+    height: 100px;
+    border: 3px ridge black;
+}
+
+.border-double {
+    width: 300px;
+    height: 100px;
+    border: 5px double black;
+}
+
+.border-short1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.border-short2 {
+    width: 300px;
+    height: 100px;
+    border: 3px dashed red;
+}
+
+.border-short3 {
+    width: 300px;
+    height: 100px;
+    border: 2px dotted green;
+}
+
+.border-short4 {
+    width: 300px;
+    height: 100px;
+    border: 4px double blue;
+}
+
+.border-left {
+    width: 300px;
+    height: 100px;
+    border-left: 1px solid red;
+}
+
+.border-left-right {
+    width: 300px;
+    height: 100px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.border-sides1 {
+    width: 300px;
+    height: 100px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.border-sides2 {
+    width: 300px;
+    height: 100px;
+    border-top: 2px dashed blue;
+    border-bottom: 2px dashed blue;
+}
+
+.radius10 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.radius20 {
+    width: 300px;
+    height: 100px;
+    background-color: #e4f1ed;
+    border-radius: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+    border-radius: 75px;
+}
+
+.radius4 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px 20px 30px 40px;
+}
+
+.radius-green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 10px 30px 60px 80px;
+}
+
+.radius2 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px 40px;
+}
+
+.radius3 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px 20px 30px;
+}
+
+.radius-percent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 10%;
+}
+
+.radius-circle-percent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.circle-mark {
+    list-style-type: circle;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.none {
+    list-style-type: none;
+}
+
+.lower-roman {
+    list-style-type: lower-roman;
+}
+
+.upper-roman {
+    list-style-type: upper-roman;
+}
+
+.lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+
+.lower-greek {
+    list-style-type: lower-greek;
+}
+
+.leading-zero {
+    list-style-type: decimal-leading-zero;
+}
