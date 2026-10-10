@@ -1,0 +1,364 @@
+#margin-parent {
+    width: 300px;
+    border: 1px solid red;
+}
+
+#margin-child {
+    height: 100px;
+    border: 1px solid green;
+    margin: 30px;
+}
+
+#margin-sides-parent {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#margin-sides-child {
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+#margin-4-parent {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#margin-4-child {
+    margin: 25px 50px 100px 10px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#margin-2-parent {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#margin-2-child {
+    margin: 25px 50px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#margin-3-parent {
+    width: 400px;
+    border: 1px solid orange;
+}
+
+#margin-3-child {
+    margin: 30px 100px 50px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#margin-center-parent {
+    border: 1px solid red;
+}
+
+#margin-center-child {
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#margin-center-child2 {
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#margin-center-child3 {
+    height: 100px;
+    width: 300px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#padding-elem {
+    padding: 30px;
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+#padding-sides-elem {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    width: 200px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+#padding-4-elem {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 10px 20px 30px 40px;
+}
+
+#padding-2-elem {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 60px 30px;
+}
+
+#padding-3-elem {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 10px 20px 40px;
+}
+
+#expand1 {
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+#expand2 {
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    border: 10px solid green;
+}
+
+#box1 {
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    padding: 25px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+
+.block-demo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+}
+
+#block-wh {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+#block-empty {
+    width: 100px;
+    border: 1px solid red;
+}
+
+.inline-demo {
+    border: 1px solid red;
+}
+
+.inline-block-demo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.ib-demo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.display-block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.display-inline {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+#block-center-parent {
+    border: 1px solid red;
+}
+
+#block-center-child {
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#block-center-child2 {
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#block-center-child3 {
+    height: 100px;
+    width: 300px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#block-left-parent {
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+#block-left-child {
+    margin-left: auto;
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+}
+
+#block-right-parent {
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+#block-right-child {
+    margin-left: auto;
+    margin-right: 20px;
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+}
+
+.inline-align-parent {
+    text-align: left;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+.inline-align-center-parent {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+.inline-align-right-parent {
+    text-align: right;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+.inline-align-child {
+    border: 1px solid green;
+}
+
+.ib-align-center-parent {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+.ib-align-child {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid green;
+}
+
+.ib-align-right-parent {
+    text-align: right;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+.flex-parent {
+    display: flex;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.flex-child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.flex-parent-inline {
+    display: inline-flex;
+    border: 1px solid red;
+}
+
+.flex-parent-padding {
+    display: inline-flex;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.flex-parent-margin {
+    display: inline-flex;
+    border: 1px solid red;
+}
+
+.flex-parent-margin .flex-child {
+    margin: 30px;
+}
+
+.flex-center-parent {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.flex-between-parent {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.flex-around-parent {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.flex-evenly-parent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}

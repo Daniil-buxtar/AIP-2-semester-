@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Блочная модель CSS — практика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Margin — внешние отступы</h1>
+
+<div id="margin-parent">
+    <div id="margin-child"></div>
+</div>
+
+<div id="margin-sides-parent">
+    <div id="margin-sides-child"></div>
+</div>
+
+<div id="margin-4-parent">
+    <div id="margin-4-child"></div>
+</div>
+
+<div id="margin-2-parent">
+    <div id="margin-2-child"></div>
+</div>
+
+<div id="margin-3-parent">
+    <div id="margin-3-child"></div>
+</div>
+
+<div id="margin-center-parent">
+    <div id="margin-center-child"></div>
+    <div id="margin-center-child2"></div>
+    <div id="margin-center-child3"></div>
+</div>
+
+<h1>Padding — внутренние отступы</h1>
+
+<div id="padding-elem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl.
+</div>
+
+<div id="padding-sides-elem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl.
+</div>
+
+<div id="padding-4-elem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div id="padding-2-elem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div id="padding-3-elem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<h1>Расширение элементов</h1>
+
+<div id="expand1"></div>
+<div id="expand2"></div>
+
+<h1>Отмена расширения — box-sizing</h1>
+
+<div id="box1"></div>
+<div id="box2"></div>
+
+<h1>Блочные элементы</h1>
+
+<div class="block-demo">text</div>
+<div class="block-demo">text</div>
+<div class="block-demo">text</div>
+
+<h1>Ширина и высота блочного элемента</h1>
+
+<div id="block-wh">text</div>
+
+<h1>Блочный без содержимого</h1>
+
+<div id="block-empty"></div>
+
+<h1>Строчные элементы</h1>
+
+<span class="inline-demo">text</span>
+<span class="inline-demo">text</span>
+<span class="inline-demo">text</span>
+
+<h1>Строчно-блочные элементы</h1>
+
+<span class="inline-block-demo">text</span>
+<span class="inline-block-demo">text</span>
+<span class="inline-block-demo">text</span>
+
+<div class="ib-demo">text</div>
+<div class="ib-demo">text</div>
+<div class="ib-demo">text</div>
+
+<h1>Свойство display</h1>
+
+<span class="display-block">text</span>
+<span class="display-block">text</span>
+<span class="display-block">text</span>
+
+<div class="display-inline">text</div>
+<div class="display-inline">text</div>
+<div class="display-inline">text</div>
+
+<h1>Выравнивание блочных — margin auto</h1>
+
+<div id="block-center-parent">
+    <div id="block-center-child"></div>
+    <div id="block-center-child2"></div>
+    <div id="block-center-child3"></div>
+</div>
+
+<div id="block-left-parent">
+    <div id="block-left-child"></div>
+</div>
+
+<div id="block-right-parent">
+    <div id="block-right-child"></div>
+</div>
+
+<h1>Выравнивание строчных — text-align</h1>
+
+<div class="inline-align-parent">
+    <span class="inline-align-child">text</span>
+</div>
+
+<div class="inline-align-center-parent">
+    <span class="inline-align-child">text</span>
+</div>
+
+<div class="inline-align-right-parent">
+    <span class="inline-align-child">text</span>
+    <span class="inline-align-child">text</span>
+    <span class="inline-align-child">text</span>
+</div>
+
+<h1>Выравнивание строчно-блочных</h1>
+
+<div class="ib-align-center-parent">
+    <div class="ib-align-child">text 1</div>
+    <div class="ib-align-child">text 2</div>
+    <div class="ib-align-child">text 3</div>
+</div>
+
+<div class="ib-align-right-parent">
+    <div class="ib-align-child">text</div>
+</div>
+
+<h1>Flex-элементы</h1>
+
+<div class="flex-parent">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+    <div class="flex-child">4</div>
+    <div class="flex-child">5</div>
+</div>
+
+<div class="flex-parent-inline">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+</div>
+
+<div class="flex-parent-padding">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+</div>
+
+<div class="flex-parent-margin">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+</div>
+
+<h1>Выравнивание flex — justify-content</h1>
+
+<div class="flex-center-parent">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+    <div class="flex-child">4</div>
+    <div class="flex-child">5</div>
+</div>
+
+<div class="flex-between-parent">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+    <div class="flex-child">4</div>
+    <div class="flex-child">5</div>
+</div>
+
+<div class="flex-around-parent">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+    <div class="flex-child">4</div>
+    <div class="flex-child">5</div>
+</div>
+
+<div class="flex-evenly-parent">
+    <div class="flex-child">1</div>
+    <div class="flex-child">2</div>
+    <div class="flex-child">3</div>
+    <div class="flex-child">4</div>
+    <div class="flex-child">5</div>
+</div>
+
+</body>
+</html>
