@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #2d3e50;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 17px;
+    color: #2d3e50;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+section {
+    margin-bottom: 24px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.pic {
+    width: 100px;
+    height: 70px;
+    background: #7e89eb;
+    border: 1px solid #4a56b8;
+}
+
+.pic.left {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 6px;
+}
+
+.pic.right {
+    float: right;
+    margin-left: 12px;
+    margin-bottom: 6px;
+}
+
+
+/* 1. Введение в float */
+.task1 .box {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 12px;
+    padding: 6px;
+}
+
+
+/* 2. Проникновение */
+.task2 .box {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+
+/* 3. float + margin */
+.task3 .box {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+.task3 p {
+    margin-left: 30px;
+    border: 1px solid green;
+}
+
+
+/* 4. float + padding */
+.task4 .box {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+.task4 p {
+    margin-left: 30px;
+    padding-left: 30px;
+    border: 1px solid green;
+}
+
+
+/* 5. Под тегами */
+.task5 .box {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+.task5 p {
+    border: 1px solid green;
+}
+
+
+/* 6. Действие на родителя */
+.task6 .box {
+    border: 1px solid red;
+    padding: 4px;
+}
+
+
+/* 7. Высота родителя */
+.task7 .box {
+    border: 1px solid red;
+    padding: 4px;
+}
+
+.task7 .fixed-height {
+    height: 100px;
+}
+
+
+/* 8. Текст в родителе */
+.task8 .box {
+    border: 1px solid red;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+
+/* 9. Обтекание */
+.task9 .parent {
+    border: 1px solid red;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+
+/* 10-11. clear / clearfix */
+.task10 .parent,
+.task11 .parent {
+    border: 1px solid red;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* 12. Клиарфикс и высота */
+.task12 .parent {
+    border: 1px solid red;
+    padding: 4px;
+}
+
+
+/* 13. float для блоков */
+.task13 .parent {
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+.task13 .child {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+    margin-right: 12px;
+    margin-bottom: 6px;
+}
+
+
+/* 14. Несколько блоков */
+.task14 .parent {
+    border: 1px solid red;
+    text-align: justify;
+    padding: 6px;
+}
+
+.task14 .child {
+    float: left;
+    width: 150px;
+    height: 80px;
+    border: 1px solid green;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+
+/* 15. Родитель без текста + клиарфикс */
+.task15 .parent {
+    width: 500px;
+    border: 1px solid red;
+    padding: 6px;
+}
+
+.task15 .child {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/* 16. 5 блоков слева */
+.task16 .wrapper {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.task16 .card {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid green;
+}
+
+
+/* 17. 5 блоков справа */
+.task17 .wrapper {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.task17 .card {
+    float: right;
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid green;
+}
+
+
+/* 18. Текст + 2 блока справа */
+.task18 .wrapper {
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: justify;
+}
+
+.task18 .side {
+    float: right;
+    width: 130px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 70px;
+    border: 1px solid green;
+}

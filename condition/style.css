@@ -362,4 +362,10 @@ section {
     height: 300px;
     border-radius: 150px;
     z-index: 2;
+
+    /*position: static;      по умолчанию */
+/*position: relative;    сдвиг от своего места, место сохраняется */
+/*position: absolute;    выпадает из потока, от родителя с position */
+/*position: fixed;       от окна, не двигается при прокрутке */
+/*position: sticky;      прилипает при прокрутке */
 }
