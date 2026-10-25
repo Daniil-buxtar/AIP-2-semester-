@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа — CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторная работа: CSS Grid</h1>
+
+    <h2>1. Столбцы: grid-template-columns</h2>
+    <section class="task1">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </section>
+
+    <h2>2. Четыре столбца разной ширины</h2>
+    <section class="task2">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>3. Два столбца по 200px</h2>
+    <section class="task3">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>4. Три столбца по 150px</h2>
+    <section class="task4">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>5. Три столбца: 100 / 150 / 200</h2>
+    <section class="task5">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>6. fr-единицы: 1fr 1fr 3fr</h2>
+    <section class="task6">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>7. Дробные fr: 1fr 0.5fr 2.5fr</h2>
+    <section class="task7">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>8. px + fr: 100px 1fr 50px</h2>
+    <section class="task8">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>9. % + fr: 50% 1fr 2fr 30%</h2>
+    <section class="task9">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>10. auto: 100px auto 150px</h2>
+    <section class="task10">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>11. repeat(3, 1fr)</h2>
+    <section class="task11">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </section>
+
+    <h2>12. repeat(3, 1fr) 2fr</h2>
+    <section class="task12">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>13. auto-fill: repeat(auto-fill, 200px)</h2>
+    <section class="task13">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>14. minmax + auto-fill</h2>
+    <section class="task14">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>15. auto-fit + minmax</h2>
+    <section class="task15">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </section>
+
+    <h2>16. Ряды: grid-template-rows</h2>
+    <section class="task16">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </section>
+
+    <h2>17. Ряды: 100px auto 60px</h2>
+    <section class="task17">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+
+    <h2>18. Ряды: repeat(3, 1fr)</h2>
+    <section class="task18">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+
+    <h2>19. grid-template: ряды / столбцы</h2>
+    <section class="task19">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>20. grid-template: 60px 1fr 60px / 20% 1fr 15%</h2>
+    <section class="task20">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>21. gap: 10px</h2>
+    <section class="task21">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>22. gap: 20px 10px</h2>
+    <section class="task22">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>23. column-gap</h2>
+    <section class="task23">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>24. row-gap</h2>
+    <section class="task24">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+
+    <h2>25. Объединение столбцов: grid-column</h2>
+    <section class="task25">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+        </div>
+    </section>
+
+    <h2>26. Объединение столбцов (2)</h2>
+    <section class="task26">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+        </div>
+    </section>
+
+    <h2>27. Объединение столбцов (3)</h2>
+    <section class="task27">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+            <div id="elem5">5</div>
+            <div id="elem6">6</div>
+            <div id="elem7">7</div>
+        </div>
+    </section>
+
+    <h2>28. Объединение рядов: grid-row</h2>
+    <section class="task28">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+        </div>
+    </section>
+
+    <h2>29. Объединение рядов (2)</h2>
+    <section class="task29">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+        </div>
+    </section>
+
+    <h2>30. Ряды + столбцы вместе</h2>
+    <section class="task30">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+            <div id="elem5">5</div>
+        </div>
+    </section>
+
+    <h2>31. Перекрытие столбцов</h2>
+    <section class="task31">
+        <div class="parent">
+            <div id="elem1">1</div>
+            <div id="elem2">2</div>
+            <div id="elem3">3</div>
+            <div id="elem4">4</div>
+        </div>
+    </section>
+
+    <h2>32. Плиточка: 3 колонки + gap</h2>
+    <section class="task32">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+
+    <h2>33. Плиточка: 4 колонки + gap</h2>
+    <section class="task33">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+    </section>
+
+    <h2>34. Плиточка: 2 + 2fr + 3fr</h2>
+    <section class="task34">
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+    </section>
+
+</body>
+</html>

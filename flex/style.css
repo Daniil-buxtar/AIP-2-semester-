@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #2d3e50;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #2d3e50;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.parent {
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/* 1. row */
+.task1 .parent {
+    flex-direction: row;
+}
+
+/* 2. row-reverse */
+.task2 .parent {
+    flex-direction: row-reverse;
+}
+
+/* 3. column */
+.task3 .parent {
+    flex-direction: column;
+}
+
+/* 4. column-reverse */
+.task4 .parent {
+    flex-direction: column-reverse;
+}
+
+
+/* 5. justify-content: flex-start (row) */
+.task5 .parent {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* 6. justify-content: flex-end (row) */
+.task6 .parent {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* 7. justify-content: flex-start (row-reverse) */
+.task7 .parent {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+/* 8. justify-content: flex-end (row-reverse) */
+.task8 .parent {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* 9. justify-content: flex-end (column) */
+.task9 .parent {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* 10. justify-content: flex-end (column-reverse) */
+.task10 .parent {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+
+/* 11. align-items: flex-start */
+.task11 .parent {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* 12. align-items: flex-end */
+.task12 .parent {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* 13. align-items: center */
+.task13 .parent {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 14. align-items: stretch */
+.task14 .parent {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.task14 .child {
+    height: auto;
+}
+
+
+/* 15. Центрирование с разной высотой */
+.task15 .parent {
+    flex-direction: row;
+    align-items: center;
+}
+
+.task15 .child {
+    height: auto;
+    line-height: 1.4;
+    padding: 6px;
+}
+
+
+/* 16. Центрирование без высоты */
+.task16 .parent {
+    flex-direction: row;
+    align-items: center;
+}
+
+.task16 .child {
+    height: auto;
+    line-height: 1.4;
+    padding: 6px;
+}
+
+
+/* 17. align-self */
+.task17 .parent {
+    flex-direction: row;
+    align-items: center;
+}
+
+.task17 .elem {
+    align-self: flex-start;
+}
+
+
+/* 18. order: 1 */
+.task18 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.task18 .elem {
+    order: 1;
+}
+
+/* 19. order: -1 */
+.task19 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.task19 .elem {
+    order: -1;
+}
+
+
+/* 20. Практика: row + space-evenly + flex-end */
+.task20 .parent {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/* 21. Практика: column + center + flex-start */
+.task21 .parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 22. Практика: column + center + flex-end */
+.task22 .parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* 23. Практика: column-reverse + center + flex-end */
+.task23 .parent {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* 24. Практика: column-reverse + center + flex-start */
+.task24 .parent {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 25. Практика: column + space-between + flex-start */
+.task25 .parent {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 26. Практика: row + space-between + flex-end */
+.task26 .parent {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* 27. Практика: column-reverse + space-between + flex-end */
+.task27 .parent {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* 28. Практика: row + space-around + flex-end */
+.task28 .parent {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* 29. Практика: row-reverse + flex-start + flex-end */
+.task29 .parent {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* 30. Практика: column-reverse + flex-end + flex-start */
+.task30 .parent {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* 31. Практика: column-reverse + flex-start + flex-end */
+.task31 .parent {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* 32. Практика: row + flex-start + flex-end */
+.task32 .parent {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* 33. Практика: row + center + flex-start */
+.task33 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 34. Практика: row + center + flex-end */
+.task34 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* 35. Практика: row-reverse + center + center */
+.task35 .parent {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 36. Практика: column + center + center */
+.task36 .parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 37. Практика: column-reverse + center + center */
+.task37 .parent {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 38. align-self: flex-end */
+.task38 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.task38 .elem {
+    align-self: flex-end;
+}
+
+/* 39. align-self: center (при stretch) */
+.task39 .parent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.task39 .child {
+    height: auto;
+}
+
+.task39 .elem {
+    align-self: center;
+}
+
+/* 40. align-self: center (column) */
+.task40 .parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.task40 .elem {
+    align-self: center;
+}

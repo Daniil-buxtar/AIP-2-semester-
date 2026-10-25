@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа — Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторная работа: Flexbox</h1>
+
+    <h2>1. flex-direction: row</h2>
+    <section class="task1">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>2. flex-direction: row-reverse</h2>
+    <section class="task2">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>3. flex-direction: column</h2>
+    <section class="task3">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>4. flex-direction: column-reverse</h2>
+    <section class="task4">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>5. justify-content: flex-start (row)</h2>
+    <section class="task5">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>6. justify-content: flex-end (row)</h2>
+    <section class="task6">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>7. justify-content: flex-start (row-reverse)</h2>
+    <section class="task7">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>8. justify-content: flex-end (row-reverse)</h2>
+    <section class="task8">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>9. justify-content: flex-end (column)</h2>
+    <section class="task9">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>10. justify-content: flex-end (column-reverse)</h2>
+    <section class="task10">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>11. align-items: flex-start</h2>
+    <section class="task11">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>12. align-items: flex-end</h2>
+    <section class="task12">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>13. align-items: center</h2>
+    <section class="task13">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>14. align-items: stretch</h2>
+    <section class="task14">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>15. Центрирование с разной высотой</h2>
+    <section class="task15">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2<br>2<br>2</div>
+            <div class="child">3</div>
+        </div>
+    </section>
+
+    <h2>16. Центрирование без высоты блоков</h2>
+    <section class="task16">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+    </section>
+
+    <h2>17. align-self (единичный элемент)</h2>
+    <section class="task17">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child elem">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>18. order: 1 (перемещение в конец)</h2>
+    <section class="task18">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child elem">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>19. order: -1 (перемещение в начало)</h2>
+    <section class="task19">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child elem">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>20. Практика: row + space-evenly + flex-end</h2>
+    <section class="task20">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>21. Практика: column + center + flex-start</h2>
+    <section class="task21">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>22. Практика: column + center + flex-end</h2>
+    <section class="task22">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>23. Практика: column-reverse + center + flex-end</h2>
+    <section class="task23">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>24. Практика: column-reverse + center + flex-start</h2>
+    <section class="task24">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>25. Практика: column + space-between + flex-start</h2>
+    <section class="task25">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>26. Практика: row + space-between + flex-end</h2>
+    <section class="task26">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>27. Практика: column-reverse + space-between + flex-end</h2>
+    <section class="task27">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>28. Практика: row + space-around + flex-end</h2>
+    <section class="task28">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>29. Практика: row-reverse + flex-start + flex-end</h2>
+    <section class="task29">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>30. Практика: column-reverse + flex-end + flex-start</h2>
+    <section class="task30">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>31. Практика: column-reverse + flex-start + flex-end</h2>
+    <section class="task31">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>32. Практика: row + flex-start + flex-end</h2>
+    <section class="task32">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>33. Практика: row + center + flex-start</h2>
+    <section class="task33">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>34. Практика: row + center + flex-end</h2>
+    <section class="task34">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>35. Практика: row-reverse + center + center</h2>
+    <section class="task35">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>36. Практика: column + center + center</h2>
+    <section class="task36">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>37. Практика: column-reverse + center + center</h2>
+    <section class="task37">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>38. align-self: flex-end</h2>
+    <section class="task38">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child elem">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>39. align-self: center (при stretch)</h2>
+    <section class="task39">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child elem">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+    <h2>40. align-self: center (column)</h2>
+    <section class="task40">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child elem">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </section>
+
+</body>
+</html>

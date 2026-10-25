@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #2d3e50;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #2d3e50;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.parent {
+    display: grid;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+.parent > div {
+    padding: 10px;
+    border: 1px solid #696989;
+    text-align: center;
+}
+
+
+/* 1. grid-template-columns: 200px 400px */
+.task1 .parent {
+    grid-template-columns: 200px 400px;
+}
+
+
+/* 2. 4 столбца разной ширины */
+.task2 .parent {
+    grid-template-columns: 50px 100px 200px 250px;
+}
+
+
+/* 3. два столбца по 200px */
+.task3 .parent {
+    grid-template-columns: repeat(2, 200px);
+}
+
+
+/* 4. три столбца по 150px */
+.task4 .parent {
+    grid-template-columns: repeat(3, 150px);
+}
+
+
+/* 5. три столбца 100 / 150 / 200 */
+.task5 .parent {
+    grid-template-columns: 100px 150px 200px;
+}
+
+
+/* 6. fr: 1fr 1fr 3fr */
+.task6 .parent {
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+
+/* 7. дробные fr */
+.task7 .parent {
+    grid-template-columns: 1fr 0.5fr 2.5fr;
+}
+
+
+/* 8. px + fr */
+.task8 .parent {
+    grid-template-columns: 100px 1fr 50px;
+}
+
+
+/* 9. % + fr */
+.task9 .parent {
+    grid-template-columns: 50% 1fr 2fr 30%;
+}
+
+
+/* 10. auto */
+.task10 .parent {
+    grid-template-columns: 100px auto 150px;
+}
+
+
+/* 11. repeat(3, 1fr) */
+.task11 .parent {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* 12. repeat(3, 1fr) 2fr */
+.task12 .parent {
+    grid-template-columns: repeat(3, 1fr) 2fr;
+}
+
+
+/* 13. auto-fill */
+.task13 .parent {
+    grid-template-columns: repeat(auto-fill, 200px);
+}
+
+
+/* 14. minmax + auto-fill */
+.task14 .parent {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+
+/* 15. auto-fit + minmax */
+.task15 .parent {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
+/* 16. grid-template-rows: 50px 100px 50px 50px */
+.task16 .parent {
+    grid-template-rows: 50px 100px 50px 50px;
+}
+
+
+/* 17. ряды: 100px auto 60px */
+.task17 .parent {
+    grid-template-rows: 100px auto 60px;
+    height: 400px;
+}
+
+
+/* 18. repeat(3, 1fr) */
+.task18 .parent {
+    grid-template-rows: repeat(3, 1fr);
+    height: 200px;
+}
+
+
+/* 19. grid-template: ряды / столбцы */
+.task19 .parent {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    height: 400px;
+}
+
+
+/* 20. grid-template: 60px 1fr 60px / 20% 1fr 15% */
+.task20 .parent {
+    grid-template: 60px 1fr 60px / 20% 1fr 15%;
+    height: 300px;
+}
+
+
+/* 21. gap: 10px */
+.task21 .parent {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 10px;
+    height: 200px;
+}
+
+
+/* 22. gap: 20px 10px */
+.task22 .parent {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 20px 10px;
+    height: 200px;
+}
+
+
+/* 23. column-gap */
+.task23 .parent {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    column-gap: 20px;
+    height: 200px;
+}
+
+
+/* 24. row-gap */
+.task24 .parent {
+    row-gap: 10px;
+    height: 200px;
+}
+
+
+/* 25. grid-column: элементы 1..3 в ряд, 4 на всю ширину */
+.task25 .parent {
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    height: 300px;
+}
+
+.task25 #elem1 { grid-column: 1 / 2; }
+.task25 #elem2 { grid-column: 2 / 3; }
+.task25 #elem3 { grid-column: 3 / 4; }
+.task25 #elem4 { grid-column: 1 / 4; }
+
+
+/* 26. grid-column (2) */
+.task26 .parent {
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    height: 300px;
+}
+
+.task26 #elem1 { grid-column: 1 / 2; }
+.task26 #elem2 { grid-column: 2 / 4; }
+.task26 #elem3 { grid-column: 1 / 3; }
+.task26 #elem4 { grid-column: 3 / 4; }
+
+
+/* 27. grid-column (3) */
+.task27 .parent {
+    grid-template-columns: repeat(5, 1fr);
+    width: 500px;
+    height: 300px;
+}
+
+.task27 #elem1 { grid-column: 1 / 2; }
+.task27 #elem2 { grid-column: 2 / 5; }
+.task27 #elem3 { grid-column: 5 / 6; }
+.task27 #elem4 { grid-column: 1 / 3; }
+.task27 #elem5 { grid-column: 3 / 6; }
+.task27 #elem6 { grid-column: 1 / 4; }
+.task27 #elem7 { grid-column: 4 / 6; }
+
+
+/* 28. grid-row: элемент 1 на два ряда */
+.task28 .parent {
+    grid-template-columns: 2fr 1fr;
+    width: 400px;
+    height: 300px;
+}
+
+.task28 #elem1 { grid-row: 1 / 3; }
+.task28 #elem2 { grid-row: 1 / 2; }
+.task28 #elem3 { grid-row: 2 / 3; }
+
+
+/* 29. grid-row: элемент 4 на три ряда */
+.task29 .parent {
+    grid-template-columns: 2fr 1fr;
+    width: 400px;
+    height: 300px;
+}
+
+.task29 #elem1 { grid-row: 1 / 2; }
+.task29 #elem2 { grid-row: 2 / 3; }
+.task29 #elem3 { grid-row: 3 / 4; }
+.task29 #elem4 { grid-row: 1 / 4; }
+
+
+/* 30. ряды + столбцы вместе */
+.task30 .parent {
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 400px;
+    height: 300px;
+}
+
+.task30 #elem1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+.task30 #elem2 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+.task30 #elem3 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+.task30 #elem4 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+.task30 #elem5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+
+
+/* 31. Перекрытие столбцов */
+.task31 .parent {
+    width: 400px;
+    height: 300px;
+}
+
+.task31 #elem1 { grid-column: 1 / 3; }
+.task31 #elem2 { grid-column: 2 / 4; }
+.task31 #elem3 { grid-column: 3 / 5; }
+.task31 #elem4 { grid-column: 1 / 4; }
+
+
+/* 32. Плиточка: 3 колонки + gap */
+.task32 .parent {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 600px;
+}
+
+.task32 .parent > div {
+    height: 100px;
+}
+
+
+/* 33. Плиточка: 4 колонки + gap */
+.task33 .parent {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 600px;
+}
+
+.task33 .parent > div {
+    height: 100px;
+}
+
+
+/* 34. Плиточка: 2 колонки + 2fr + 3fr */
+.task34 .parent {
+    grid-template-columns: repeat(2, 1fr) 2fr 3fr;
+    gap: 10px;
+    width: 600px;
+}
+
+.task34 .parent > div {
+    height: 100px;
+}
