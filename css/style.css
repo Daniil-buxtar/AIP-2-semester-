@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* ===== Задание 1: Одноколоночный макет с меню и контентом ===== */
+.task1 #wrapper {
+    width: 800px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.task1 #menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #484848;
+}
+
+.task1 #menu a {
+    margin: 0 5px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 14px Arial;
+}
+
+.task1 #menu a:hover,
+.task1 #menu a.active {
+    color: #484848;
+    background-color: #fff;
+}
+
+.task1 #content {
+    padding: 0 30px 20px;
+}
+
+.task1 #content h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.task1 #content p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font: 18px/1.3 Arial;
+    text-align: justify;
+}
+
+/* ===== Задание 2: Одноколоночный макет с меню слева и стилями ссылок ===== */
+.task2 #wrapper {
+    width: 700px;
+    margin: 50px auto;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+.task2 #content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task2 #content p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font: 17px/20px "Times New Roman";
+}
+
+.task2 #content a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.task2 #content a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.task2 #menu {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #484848;
+}
+
+.task2 #menu a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 14px Arial;
+}
+
+.task2 #menu a:hover,
+.task2 #menu a.active {
+    color: #484848;
+    background-color: #fff;
+}
+
+/* ===== Задание 3: Одноколоночный макет с рамками, футером и оранжевой темой ===== */
+.task3 body {
+    margin: 0;
+}
+
+.task3 #wrapper {
+    width: 900px;
+    margin: 0 auto 50px;
+}
+
+.task3 #containter {
+    margin-bottom: 20px;
+    border-left: 1px ridge #FC9D00;
+    border-right: 1px ridge #FC9D00;
+    border-bottom: 1px ridge #FC9D00;
+}
+
+.task3 #menu {
+    display: flex;
+    background-color: #FC9D00;
+    margin-bottom: 20px;
+}
+
+.task3 #menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 15px Arial;
+}
+
+.task3 #menu a:hover,
+.task3 #menu a.active {
+    color: #FC9D00;
+    background-color: #fff;
+}
+
+.task3 #content h1,
+.task3 #content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #9B6100;
+}
+
+.task3 #content h1 {
+    font: 30px "Times New Roman";
+}
+
+.task3 #content h2 {
+    font: 25px "Times New Roman";
+}
+
+.task3 #content p {
+    margin-bottom: 5px;
+    padding: 0 10px;
+    font: 17px/33px "Times New Roman";
+    text-align: justify;
+    text-indent: 50px;
+    color: #CC8000;
+}
+
+.task3 #content a {
+    color: #CC8000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.task3 #content a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.task3 #footer {
+    display: flex;
+    justify-content: center;
+    font: 13px Arial;
+}
+
+.task3 #footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #9B6100;
+    font: bold 13px Arial;
+}
+
+.task3 #footer a:hover,
+.task3 #footer a.active {
+    text-decoration: underline;
+    color: black;
+}
+
+/* ===== Задание 4: Одноколоночный макет с блоками новостей ===== */
+.task4 #wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.task4 #wrapper h1 {
+    font: 30px "Times New Roman";
+    text-align: center;
+}
+
+.task4 #wrapper a {
+    color: blue;
+    text-decoration: none;
+}
+
+.task4 #wrapper a:hover {
+    text-decoration: underline;
+}
+
+.task4 #wrapper div {
+    margin-bottom: 20px;
+    border: 1px solid #707070;
+    padding: 20px;
+}
+
+.task4 #wrapper p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.task4 #wrapper p.more {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* ===== Задание 5: Структурные блоки сайта (wrapper + header/content/sidebar/footer) ===== */
+.task5 #wrapper {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.task5 #header {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task5 #content {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task5 #sidebar {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task5 #footer {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* ===== Задание 6: Структура с container (header/container/content+sidebar/footer) ===== */
+.task6 #wrapper {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.task6 #header {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task6 #container {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task6 #content {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task6 #sidebar {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.task6 #footer {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* ===== Задание 7: Структура с двумя сайдбарами (left/content/right) ===== */
+.task7 #wrapper {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.task7 #header {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task7 #container {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.task7 #left {
+    border: 1px solid #333;
+    padding: 10px;
+    flex: 0 0 150px;
+}
+
+.task7 #content {
+    border: 1px solid #333;
+    padding: 10px;
+    flex: 1;
+}
+
+.task7 #right {
+    border: 1px solid #333;
+    padding: 10px;
+    flex: 0 0 150px;
+}
+
+.task7 #footer {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* ===== Задание 8: Практика на макетах — три колонки ===== */
+.task8 .wrapper {
+    width: 1100px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+.task8 header {
+    border: 1px solid black;
+}
+
+.task8 .container {
+    display: flex;
+}
+
+.task8 main {
+    width: 660px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.task8 .left {
+    width: 200px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.task8 .right {
+    width: 200px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.task8 footer {
+    padding: 30px 0;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.task8 .block {
+    margin: 20px 0 50px 220px;
+}
+
+.task8 .sitename {
+    margin-bottom: 10px;
+    font: 20px Arial;
+}
+
+.task8 nav {
+    display: flex;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.task8 nav a {
+    padding: 10px;
+    color: blue;
+    text-decoration: none;
+    font: 15px Arial;
+}
+
+.task8 nav a:hover,
+.task8 nav a.active {
+    color: red;
+    text-decoration: underline;
+}
+
+.task8 main h1 {
+    font: 20px "Times New Roman";
+}
+
+.task8 main p {
+    margin: 10px 0;
+    text-align: justify;
+    font: 15px Arial;
+}
